@@ -173,10 +173,10 @@
                 console.log(prize);
 
                 //Convert the first word to upper case
-                prize = convertToUpperCase(prize);
+                // prize = convertToUpperCase(prize);
                 
                 //Display the prize name on the screen
-                onlineCoursedisplay.textContent = prize;
+                onlineCoursedisplay.textContent = prize.name;
 
                 //Decrease the prize quantity by 1
                 prize.quantity -= 1;
@@ -195,18 +195,18 @@
             }, "1000");
         };
 
-        function convertToUpperCase(prize) {
-            prize = prize.name;
-            console.log(prize);
-            upperCasePrize = prize.split(" ");
-            for (let i = 0; i < upperCasePrize.length; i++) {
-                if (typeof UppercasePrize !== Number) {
-                    upperCasePrize[i] = upperCasePrize[i][0].toUpperCase() + upperCasePrize[i].substr(1);
-                }
-            }
+        // function convertToUpperCase(prize) {
+        //     prize = prize.name;
+        //     console.log(prize);
+        //     upperCasePrize = prize.split(" ");
+        //     for (let i = 0; i < upperCasePrize.length; i++) {
+        //         if (typeof UppercasePrize !== Number) {
+        //             upperCasePrize[i] = upperCasePrize[i][0].toUpperCase() + upperCasePrize[i].substr(1);
+        //         }
+        //     }
             
-            return upperCasePrize.join(" ");
-        }
+        //     return upperCasePrize.join(" ");
+        // }
         
 
         function showOnlineCoursePrizeTotalNumber() {
